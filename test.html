@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>websocketd count example</title>
+    <style>
+      #count {
+        font: bold 150px arial;
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="count"></div>
+
+    <script>
+		var ws = new WebSocket('ws://106.14.123.168:8083/');
+		ws.onopen = function() {
+		document.body.style.backgroundColor = '#cfc';
+		send();
+		};
+		ws.onclose = function() {
+		document.body.style.backgroundColor = null;
+		};
+
+		ws.onmessage = function(event) {
+		document.getElementById('count').textContent = event.data;
+		};
+
+		//发送消息
+		function send(){
+			ws.send("用户");
+			ws.send("001");
+		}
+
+    </script>
+
+  </body>
+</html>

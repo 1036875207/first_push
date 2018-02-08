@@ -1,0 +1,113 @@
+/**样式清除**/
+body,html{
+	width: 100%;
+	height: 100%;
+}
+body,html,div,button,input,footer,header,h2{
+	margin: 0;
+	padding: 0px;
+}
+header{
+	height: 100px;
+	width: 100%;
+	background-color: #EDEDED; 
+	color: #2E2E2E;
+	font-size: 16px;
+}
+ul{
+	display: flex;
+	align-items:center;
+	flex-direction: row;
+}
+ul li{
+	display: block;
+	padding: 5px;
+	list-style: none;
+}
+.talk_window{
+	position: relative;
+	margin:0 auto;
+	height: 500px;
+	width: 970px;
+	overflow: hidden;
+	border: 3px solid #9AD4DE;
+}
+.blank{
+	position: relative;
+	overflow:hidden;
+	width: 100%;
+	height: 600px;
+	background-color:#FFFFFF; 
+	transition: top 2s;
+	-moz-transition: top 2s;	/* Firefox 4 */
+	-webkit-transition: top 2s;	/* Safari 和 Chrome */
+	-o-transition: top 2s;	/* Opera */
+}
+.other_talk{
+	display: block;
+	margin: 5px 0px;
+}
+.other_talk i{
+	margin: 2px;
+	font-style:normal;
+}
+.other_talk .matter{
+	display: inline-block;
+	padding: 10px;
+	background-color: #FF4440 ;
+	border-radius: 10px;
+	max-width: 800px;
+	margin: 2px;
+}
+.more{
+	position: absolute;
+	left: 475px;
+	top: 0px;
+	height: 20px;
+	width: 20px;
+	transform: rotate(90deg);
+	background-size: 20px 20px;
+	background-image: url("../images/more.png"); 
+	z-index:10;
+}
+.more:hover{
+	height: 30px;
+	width: 30px;
+	background-size: 30px 30px;
+	left: 470px;
+}
+/* .self_talk{
+	margin: 5px 0;
+	float: right;
+}
+.self_talk i{
+}
+.self_talk .matter{
+	display: inline-block;
+	padding: 10px;
+	background-color: #FF4440 ;
+	border-radius: 10px;
+	max-width: 800px;
+} */
+.footer_bg{
+	height: 30px;
+	width: 976px;
+	margin: 0 auto;
+}
+#talk_input{
+    display: block;
+    padding:8px 4px;
+    width:900px;
+    height: 10px;
+    border: 1px solid #5B5B5B;
+}
+.footer_bg *{
+	float: left;
+}
+.send_button{
+	height: 28px;
+	width: 66px;
+}
+.user_add{
+	text-align: center;
+}
